@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Trends in 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #121212;
+      margin: 0;
+      padding: 0;
+      color: #f0f0f0;
+      overflow-y: scroll;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    header {
+      background-color: #00796b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #00e5ff;
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      font-size: 3.5rem;
+      text-shadow: 0 0 8px rgba(0, 229, 255, 0.5);
+    }
+
+    article {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #1c1c1c;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #00e5ff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #00796b;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: #00e5ff;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Building AI Projects: From Beginner to Intermediate: My Experience</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Starting with the Basics</h2>
+            <p>When I first started learning AI, I had no idea where to begin. The complexity of AI seemed overwhelming, and I wasn't sure how to structure my learning journey. After months of experimentation and learning, I’ve made the transition from a beginner to an intermediate level. Here’s how you can do the same!</p>
+
+            <h3>Understanding the Fundamentals of AI</h3>
+            <p>Before diving into complex algorithms, it’s crucial to understand the fundamentals:</p>
+            <ul>
+                <li><strong>What is AI?</strong> Artificial intelligence is the simulation of human intelligence in machines that are programmed to think, reason, and act autonomously.</li>
+                <li><strong>Types of AI:</strong> Start by understanding the difference between narrow AI (which focuses on specific tasks) and general AI (which can perform any intellectual task a human can).</li>
+                <li><strong>Machine Learning Basics:</strong> ML is a subfield of AI that focuses on building systems that can learn from data and make decisions.</li>
+            </ul>
+
+            <h3>Key Tools and Frameworks</h3>
+            <ul>
+                <li><strong>Python:</strong> The most popular programming language for AI development due to its simplicity and powerful libraries.</li>
+                <li><strong>Libraries:</strong> Libraries like TensorFlow, Keras, and PyTorch are essential for building machine learning models.</li>
+                <li><strong>Data Science:</strong> Learn about NumPy, pandas, and Matplotlib to handle data efficiently and visualize results.</li>
+            </ul>
+
+            <h2>My Journey from Beginner to Intermediate in AI</h2>
+            <h3>Building Simple Projects</h3>
+            <p>At the beginner level, I started with simple AI projects, like:</p>
+            <ul>
+                <li><strong>Linear Regression:</strong> Predicting values based on data points.</li>
+                <li><strong>Basic Neural Networks:</strong> Using Keras to build simple neural networks for classification tasks.</li>
+            </ul>
+
+            <h3>Exploring More Complex Models</h3>
+            <p>After gaining some experience, I began exploring more advanced AI topics like:</p>
+            <ul>
+                <li><strong>Deep Learning:</strong> Neural networks with multiple hidden layers that can solve more complex problems.</li>
+                <li><strong>NLP (Natural Language Processing):</strong> Analyzing text data and building models to process and understand natural language.</li>
+                <li><strong>Reinforcement Learning:</strong> Learning from interaction with the environment to make decisions.</li>
+            </ul>
+
+            <h3>Learning from Real-World Projects</h3>
+            <p>As I moved forward, I started applying AI to real-world problems:</p>
+            <ul>
+                <li><strong>Image Recognition with CNNs:</strong> Using deep learning to classify images (e.g., identifying objects in a photo).</li>
+                <li><strong>Chatbots with NLP:</strong> Building simple conversational agents using Python’s NLTK.</li>
+            </ul>
+
+            <h3>Sample Code: Simple Linear Regression with Scikit-Learn</h3>
+            <pre>
+                <code>
+# Importing necessary libraries
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+# Example Data (years of experience vs. salary)
+X = np.array([[1], [2], [3], [4], [5]])  # Years of Experience
+y = np.array([30000, 35000, 40000, 45000, 50000])  # Salary
+
+# Creating a model and fitting the data
+model = LinearRegression()
+model.fit(X, y)
+
+# Making predictions
+predicted_salary = model.predict([[6]])
+
+# Visualizing the results
+plt.scatter(X, y, color='blue')
+plt.plot(X, model.predict(X), color='red')
+plt.title("Salary vs Experience")
+plt.xlabel("Years of Experience")
+plt.ylabel("Salary")
+plt.show()
+
+print(f"Predicted salary for 6 years of experience: ${predicted_salary[0]}")
+                </code>
+            </pre>
+
+            <h2>Moving to the Intermediate Level</h2>
+            <p>Once you are comfortable with the basics, here are a few things you can focus on to step up your AI game:</p>
+            <ul>
+                <li><strong>Master Hyperparameter Tuning:</strong> Learn how to adjust the parameters of your machine learning models to get the best results.</li>
+                <li><strong>Work with Large Datasets:</strong> Gain experience with real-world data, such as Kaggle competitions or datasets from UCI Machine Learning Repository.</li>
+                <li><strong>Build End-to-End AI Projects:</strong> Develop projects that require data collection, preprocessing, model building, and deployment.</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>Whether you’re starting with AI or learning a new language like German, expanding your skills can open up doors in the tech world. By diving deeper into AI and learning German, you're not just improving your technical knowledge—you're also preparing yourself for a more global, interconnected world of technology.</p>
+            <p>Happy coding and language learning!</p>
+        </section>
+    </main>
+
+    <footer>
+        Made with ❤️ by Ruchita Deodhar
+      </footer>
+      
+      </body>
+      </html>
+      
